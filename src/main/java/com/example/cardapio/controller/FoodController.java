@@ -16,7 +16,7 @@ public class FoodController {
     @Autowired //injeção de depedência
     private FoodRepository repository;
 
-    @CrossOrigin(origins = "*", allowedHeaders = "*") //restrição de origem0
+    @CrossOrigin(origins = "*", allowedHeaders = "*") //restrição de origem
     @PostMapping
     public void saveFood(@RequestBody FoodRequestDTO data){
         Food foodData = new Food(data);
